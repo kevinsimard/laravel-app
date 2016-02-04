@@ -8,4 +8,9 @@ elixir(function (mix) {
     mix.scripts([
         //
     ], 'public/assets/js/app.js');
+
+    mix.version([
+        'assets/css/app.css',
+        'assets/js/app.js'
+    ]);
 });
