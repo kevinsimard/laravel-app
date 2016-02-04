@@ -1,0 +1,6 @@
+{
+    "name": "bower",
+    "dependencies": {
+        "uikit": "2.24.*"
+    }
+}
