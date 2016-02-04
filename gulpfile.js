@@ -6,7 +6,8 @@ elixir(function (mix) {
     ], 'public/assets/css/app.css');
 
     mix.scripts([
-        //
+        'angular/module.js',
+        'angular/bootstrap.js',
     ], 'public/assets/js/app.js');
 
     mix.version([

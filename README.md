@@ -60,12 +60,20 @@
     ├── public
     │   ├── assets
     │   │   └── .gitignore
+    │   ├── build
+    │   │   └── .gitignore
     │   ├── .htaccess
     │   ├── favicon.ico
     │   ├── index.php
     │   └── robots.txt
     ├── resources
     │   ├── assets
+    │   │   ├── js
+    │   │   │   └── angular
+    │   │   │       ├── controllers
+    │   │   │       │   └── .gitkeep
+    │   │   │       ├── bootstrap.js
+    │   │   │       └── module.js
     │   │   └── sass
     │   │       └── vendors.scss
     │   ├── lang
