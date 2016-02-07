@@ -27,7 +27,7 @@ return [
 
     // logging configuration
     // supported: "single", "daily", "syslog", "errorlog"
-    'log' => env('APP_LOG', 'single'),
+    'log' => env('APP_LOG', 'daily'),
 
     // autoloaded service providers
     'providers' => [
