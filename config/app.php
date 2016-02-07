@@ -8,7 +8,7 @@ return [
     'debug' => env('APP_DEBUG', false),
 
     // application URL
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://localhost'),
 
     // application timezone
     'timezone' => 'UTC',
