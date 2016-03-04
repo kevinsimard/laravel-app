@@ -1,5 +1,3 @@
 * text=auto
 *.css linguist-vendored
 *.less linguist-vendored
-
-.README.md export-ignore

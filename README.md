@@ -1,6 +1,7 @@
-# Laravel App Structure
+# Laravel Application Structure
 
 ## Code Structure
+
     ├── app
     │   ├── Console
     │   │   └── Kernel.php
@@ -102,6 +103,7 @@
     │       └── .gitignore
     ├── tests
     │   └── TestCase.php
+    ├── .editorconfig
     ├── .env.example
     ├── .gitattributes
     ├── .gitignore
