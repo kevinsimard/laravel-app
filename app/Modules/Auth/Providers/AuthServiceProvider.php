@@ -13,7 +13,8 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [];
 
     /**
-     * @param \Illuminate\Contracts\Auth\Access\Gate $gate
+     * @param  \Illuminate\Contracts\Auth\Access\Gate  $gate
+     * @return void
      */
     public function boot(GateContract $gate)
     {

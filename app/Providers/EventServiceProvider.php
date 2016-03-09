@@ -13,7 +13,8 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [];
 
     /**
-     * @param \Illuminate\Contracts\Events\Dispatcher $events
+     * @param  \Illuminate\Contracts\Events\Dispatcher  $events
+     * @return void
      */
     public function boot(DispatcherContract $events)
     {

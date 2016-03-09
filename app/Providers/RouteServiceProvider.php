@@ -8,7 +8,8 @@ use Illuminate\Routing\Router;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * @param \Illuminate\Routing\Router $router
+     * @param  \Illuminate\Routing\Router  $router
+     * @return void
      */
     public function boot(Router $router)
     {
@@ -18,7 +19,8 @@ class RouteServiceProvider extends ServiceProvider
     }
 
     /**
-     * @param \Illuminate\Routing\Router $router
+     * @param  \Illuminate\Routing\Router  $router
+     * @return void
      */
     public function map(Router $router)
     {

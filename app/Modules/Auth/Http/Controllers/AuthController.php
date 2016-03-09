@@ -16,14 +16,16 @@ class AuthController extends BaseController
      */
     protected $redirectTo = '/home';
 
+    /**
+     * @return void
+     */
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
 
     /**
-     * @param array $data
-     *
+     * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -36,8 +38,7 @@ class AuthController extends BaseController
     }
 
     /**
-     * @param array $data
-     *
+     * @param  array  $data
      * @return \App\Modules\Auth\Entities\User
      */
     protected function create(array $data)
