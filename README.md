@@ -13,8 +13,7 @@
     │   │   ├── Middleware
     │   │   │   ├── EncryptCookies.php
     │   │   │   └── VerifyCsrfToken.php
-    │   │   ├── Kernel.php
-    │   │   └── routes.php
+    │   │   └── Kernel.php
     │   ├── Modules
     │   │   └── Auth
     │   │       ├── Entities

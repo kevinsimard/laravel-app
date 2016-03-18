@@ -24,6 +24,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        require app_path('Http/routes.php');
+        $router->group(['middleware' => ['web']], function () {
+            //
+        });
     }
 }
