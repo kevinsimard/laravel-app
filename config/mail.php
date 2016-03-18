@@ -2,7 +2,7 @@
 
 return [
     // default mail driver
-    // supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "log"
+    // supported: "smtp", "mail", "sendmail", "mailgun", "mandrill", "ses", "sparkpost", "log"
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     // SMTP host address
