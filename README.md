@@ -114,6 +114,11 @@
     ├── composer.json
     ├── composer.lock
     ├── gulpfile.js
+    ├── LICENSE.txt
     ├── package.json
     ├── phpunit.xml
     └── server.php
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
