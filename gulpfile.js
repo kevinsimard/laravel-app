@@ -2,8 +2,9 @@ var elixir = require('laravel-elixir');
 
 elixir(function (mix) {
     mix.sass([
-        'vendors.scss'
-    ], 'public/assets/css/app.css');
+        'app.scss'
+    ], 'public/assets/css/app.css'
+    , null, true);
 
     mix.scripts([
         'angular/module.js',

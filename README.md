@@ -76,7 +76,8 @@
     │   │   │       ├── bootstrap.js
     │   │   │       └── module.js
     │   │   └── sass
-    │   │       └── vendors.scss
+    │   │       ├── _vendors.scss
+    │   │       └── app.scss
     │   ├── lang
     │   │   └── en
     │   │       ├── auth.php
