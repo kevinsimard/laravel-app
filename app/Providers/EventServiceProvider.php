@@ -13,6 +13,11 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [];
 
     /**
+     * @var array
+     */
+    protected $subscribe = [];
+
+    /**
      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
      * @return void
      */
