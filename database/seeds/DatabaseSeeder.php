@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         foreach ($this->factories as $entityClass) {
-            for ($i = 0; $i < rand(5, 15); ++$i) {
+            foreach (range(0, rand(5, 15)) as $i) {
                 factory($entityClass)->create();
             }
         }
