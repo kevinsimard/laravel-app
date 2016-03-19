@@ -14,7 +14,7 @@ class Authenticate
     {
         if (\Auth::guard($guard)->guest()) {
             if ($request->ajax() || $request->wantsJson()) {
-                return response('Unauthorized.', 401);
+                return response('Unauthorized', 401);
             }
 
             return redirect()->guest('login');
