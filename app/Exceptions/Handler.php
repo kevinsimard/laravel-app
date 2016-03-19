@@ -3,9 +3,9 @@
 namespace App\Exceptions;
 
 use Exception;
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Foundation\Exceptions\Handler as CoreHandler;
 
-class Handler extends ExceptionHandler
+class Handler extends CoreHandler
 {
     /**
      * @var array

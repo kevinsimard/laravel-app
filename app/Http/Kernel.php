@@ -2,9 +2,9 @@
 
 namespace App\Http;
 
-use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use Illuminate\Foundation\Http\Kernel as CoreKernel;
 
-class Kernel extends HttpKernel
+class Kernel extends CoreKernel
 {
     /**
      * @var array
