@@ -13,7 +13,7 @@ return [
 
         'database' => [
             'driver' => 'database',
-            'table' => 'jobs',
+            'table' => 'job',
             'queue' => 'default',
             'expire' => 60,
         ],

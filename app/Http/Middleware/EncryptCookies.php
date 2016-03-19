@@ -9,5 +9,7 @@ class EncryptCookies extends CoreEncrypter
     /**
      * @var array
      */
-    protected $except = [];
+    protected $except = [
+        //
+    ];
 }

@@ -1,5 +1,6 @@
 /bower_components/
 /node_modules/
+/public/storage/
 /vendor/
 /.env
 /.php_cs.cache

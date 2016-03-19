@@ -10,7 +10,9 @@ class Kernel extends ConsoleKernel
     /**
      * @var array
      */
-    protected $commands = [];
+    protected $commands = [
+        //
+    ];
 
     /**
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule

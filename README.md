@@ -13,7 +13,11 @@
     │   │   ├── Middleware
     │   │   │   ├── EncryptCookies.php
     │   │   │   └── VerifyCsrfToken.php
+    │   │   ├── Requests
+    │   │   │   └── BaseRequest.php
     │   │   └── Kernel.php
+    │   ├── Jobs
+    │   │   └── BaseJob.php
     │   ├── Modules
     │   │   └── Auth
     │   │       ├── Entities
@@ -90,6 +94,8 @@
     │           └── .gitkeep
     ├── storage
     │   ├── app
+    │   │   ├── public
+    │   │   │   └── .gitignore
     │   │   └── .gitignore
     │   ├── framework
     │   │   ├── cache
@@ -108,13 +114,12 @@
     ├── .gitattributes
     ├── .gitignore
     ├── .php_cs
+    ├── LICENSE.txt
     ├── README.md
     ├── artisan
-    ├── bower.json
     ├── composer.json
     ├── composer.lock
     ├── gulpfile.js
-    ├── LICENSE.txt
     ├── package.json
     ├── phpunit.xml
     └── server.php

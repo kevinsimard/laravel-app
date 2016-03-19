@@ -8,6 +8,11 @@ use Illuminate\Routing\Router;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
+     * @var string
+     */
+    protected $namespace = 'App\Modules';
+
+    /**
      * @param  \Illuminate\Routing\Router  $router
      * @return void
      */

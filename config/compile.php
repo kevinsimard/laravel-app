@@ -2,8 +2,12 @@
 
 return [
     // additional compiled classes
-    'files' => [],
+    'files' => [
+        //
+    ],
 
     // compiled file providers
-    'providers' => [],
+    'providers' => [
+        //
+    ],
 ];

@@ -10,7 +10,9 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * @var array
      */
-    protected $policies = [];
+    protected $policies = [
+        //
+    ];
 
     /**
      * @param  \Illuminate\Contracts\Auth\Access\Gate  $gate

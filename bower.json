@@ -1,7 +1,0 @@
-{
-    "name": "bower",
-    "dependencies": {
-        "angular": "1.4.*",
-        "csstyle": "1.5.*"
-    }
-}

@@ -9,5 +9,7 @@ class VerifyCsrfToken extends CoreVerifier
     /**
      * @var array
      */
-    protected $except = [];
+    protected $except = [
+        //
+    ];
 }

@@ -23,6 +23,7 @@ return [
     ],
 
     // user providers
+    // supported: "database", "eloquent"
     'providers' => [
         'user' => [
             'driver' => 'eloquent',
