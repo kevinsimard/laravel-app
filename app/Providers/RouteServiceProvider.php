@@ -29,7 +29,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        $router->group(['middleware' => ['web']], function () {
+        $router->group([
+            'middleware' => ['web']
+        ], function ($router) {
             //
         });
     }
