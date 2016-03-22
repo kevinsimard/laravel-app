@@ -9,19 +9,38 @@ class Authenticate
     /**
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
-     * @param  string|null  $guard
+     * @param  string  ...$guards
      * @return mixed
      */
-    public function handle($request, \Closure $next, $guard = null)
+    public function handle($request, \Closure $next, ...$guards)
     {
-        if (\Auth::guard($guard)->guest()) {
-            if ($request->ajax() || $request->wantsJson()) {
-                throw new HttpException(401);
-            }
-
-            return redirect()->guest('login');
+        if ($this->check($guards)) {
+            return $next($request);
         }
 
-        return $next($request);
+        if ($request->ajax() || $request->wantsJson()) {
+            throw new HttpException(401);
+        }
+
+        return redirect()->guest('login');
+    }
+
+    /**
+     * @param  array  $guards
+     * @return bool
+     */
+    protected function check(array $guards)
+    {
+        if (empty($guards)) {
+            return \Auth::check();
+        }
+
+        foreach ($guards as $guard) {
+            if (\Auth::guard($guard)->check()) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
