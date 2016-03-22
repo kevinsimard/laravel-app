@@ -37,4 +37,5 @@ return [
 
     // HTTP only cookies
     'secure' => false,
+    'http_only' => true,
 ];
