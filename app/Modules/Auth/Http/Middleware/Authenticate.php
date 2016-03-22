@@ -2,6 +2,8 @@
 
 namespace App\Modules\Auth\Http\Middleware;
 
+use Symfony\Component\HttpKernel\Exception\HttpException;
+
 class Authenticate
 {
     /**
@@ -14,7 +16,7 @@ class Authenticate
     {
         if (\Auth::guard($guard)->guest()) {
             if ($request->ajax() || $request->wantsJson()) {
-                return response('Unauthorized', 401);
+                throw new HttpException(401);
             }
 
             return redirect()->guest('login');
