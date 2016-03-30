@@ -31,6 +31,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         $router->group([
             'middleware' => ['web'],
+            'namespace' => $this->namespace,
         ], function ($router) {
             //
         });
