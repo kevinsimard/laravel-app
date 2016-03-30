@@ -13,7 +13,7 @@ class Handler extends CoreHandler
     protected $dontReport = [
         \Illuminate\Auth\Access\AuthorizationException::class,
         \Illuminate\Database\Eloquent\ModelNotFoundException::class,
-        \Illuminate\Foundation\Validation\ValidationException::class,
+        \Illuminate\Validation\ValidationException::class,
         \Symfony\Component\HttpKernel\Exception\HttpException::class,
     ];
 
