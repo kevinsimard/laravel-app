@@ -36,7 +36,6 @@ class Kernel extends CoreKernel
     protected $routeMiddleware = [
         'guest' => \App\Modules\Auth\Http\Middleware\RedirectIfAuthenticated::class,
         'auth' => \App\Modules\Auth\Http\Middleware\Authenticate::class,
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
