@@ -2,8 +2,6 @@
 
 namespace App\Modules\Auth\Http\Middleware;
 
-use Symfony\Component\HttpKernel\Exception\HttpException;
-
 class Authenticate
 {
     /**
@@ -11,6 +9,8 @@ class Authenticate
      * @param  \Closure  $next
      * @param  string  ...$guards
      * @return mixed
+     *
+     * @throws \Symfony\Component\HttpKernel\Exception\HttpException
      */
     public function handle($request, \Closure $next, ...$guards)
     {
@@ -18,8 +18,8 @@ class Authenticate
             return $next($request);
         }
 
-        if ($request->ajax() || $request->wantsJson()) {
-            throw new HttpException(401);
+        if ($request->ajax() || $request->wantsJson() || $request->isJson()) {
+            abort(401);
         }
 
         return redirect()->guest('login');
@@ -32,11 +32,13 @@ class Authenticate
     protected function check(array $guards)
     {
         if (empty($guards)) {
-            return \Auth::check();
+            return auth()->check();
         }
 
         foreach ($guards as $guard) {
-            if (\Auth::guard($guard)->check()) {
+            if (auth()->guard($guard)->check()) {
+                auth()->shouldUse($guard);
+
                 return true;
             }
         }
