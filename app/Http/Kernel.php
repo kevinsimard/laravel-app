@@ -34,8 +34,9 @@ class Kernel extends CoreKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'guest' => \App\Modules\Auth\Http\Middleware\RedirectIfAuthenticated::class,
         'auth' => \App\Modules\Auth\Http\Middleware\Authenticate::class,
+        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
+        'guest' => \App\Modules\Auth\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
