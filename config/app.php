@@ -55,7 +55,6 @@ return [
 
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
         App\Modules\Auth\Providers\AuthServiceProvider::class,
     ],
 
