@@ -72,16 +72,7 @@
     │   └── robots.txt
     ├── resources
     │   ├── assets
-    │   │   ├── js
-    │   │   │   └── angular
-    │   │   │       ├── controllers
-    │   │   │       │   └── .gitkeep
-    │   │   │       ├── bootstrap.js
-    │   │   │       └── module.js
-    │   │   └── sass
-    │   │       ├── _normalize.scss
-    │   │       ├── _vendors.scss
-    │   │       └── app.scss
+    │   │   └── .gitkeep
     │   ├── lang
     │   │   └── en
     │   │       ├── auth.php

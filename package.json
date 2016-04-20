@@ -4,9 +4,6 @@
         "gulp": "3.9.*"
     },
     "dependencies": {
-        "angular": "1.4.*",
-        "jquery": "2.2.*",
-        "csstyle": "1.5.*",
         "laravel-elixir": "5.0.*"
     }
 }
