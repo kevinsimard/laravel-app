@@ -29,9 +29,11 @@
     │   │       │   ├── Controllers
     │   │       │   │   ├── AuthController.php
     │   │       │   │   └── PasswordController.php
-    │   │       │   └── Middleware
-    │   │       │       ├── Authenticate.php
-    │   │       │       └── RedirectIfAuthenticated.php
+    │   │       │   ├── Middleware
+    │   │       │   │   ├── Authenticate.php
+    │   │       │   │   └── RedirectIfAuthenticated.php
+    │   │       │   └── Requests
+    │   │       │       └── RegisterRequest.php
     │   │       └── Providers
     │   │           └── AuthServiceProvider.php
     │   └── Providers
