@@ -27,6 +27,8 @@ class Kernel extends CoreKernel
 
         'api' => [
             'throttle:60,1',
+            \App\Http\Middleware\AssertJsonRequest::class,
+            \App\Http\Middleware\AssertNonEmptyResponse::class,
         ],
     ];
 

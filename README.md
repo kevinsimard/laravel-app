@@ -1,6 +1,7 @@
 # Laravel Application Structure
 
 ## Code Structure
+
     ├── app
     │   ├── Console
     │   │   └── Kernel.php
@@ -10,6 +11,9 @@
     │   │   ├── Controllers
     │   │   │   └── BaseController.php
     │   │   ├── Middleware
+    │   │   │   ├── AssertJsonRequest.php
+    │   │   │   ├── AssertNonEmptyResponse.php
+    │   │   │   ├── CorsRequest.php
     │   │   │   ├── EncryptCookies.php
     │   │   │   └── VerifyCsrfToken.php
     │   │   ├── Requests
@@ -106,7 +110,6 @@
     ├── .gitattributes
     ├── .gitignore
     ├── .php_cs
-    ├── LICENSE.txt
     ├── README.md
     ├── artisan
     ├── composer.json

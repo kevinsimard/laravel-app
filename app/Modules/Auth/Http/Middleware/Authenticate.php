@@ -2,6 +2,8 @@
 
 namespace App\Modules\Auth\Http\Middleware;
 
+use Closure;
+
 class Authenticate
 {
     /**
@@ -12,10 +14,10 @@ class Authenticate
      *
      * @throws \Symfony\Component\HttpKernel\Exception\HttpException
      */
-    public function handle($request, \Closure $next, $guard = null)
+    public function handle($request, Closure $next, string $guard = null)
     {
         if (auth()->guard($guard)->guest()) {
-            if ($request->ajax() || $request->wantsJson() || $request->isJson()) {
+            if ($request->ajax() || $request->wantsJson()) {
                 abort(401);
             } else {
                 return redirect()->guest('login');
