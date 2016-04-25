@@ -55,7 +55,7 @@ class Handler extends CoreHandler
      */
     protected function renderHttpException(HttpException $e): Response
     {
-        if (! $request->ajax() && ! $request->wantsJson()) {
+        if (! request()->ajax() && ! request()->wantsJson()) {
             return parent::renderHttpException($e);
         }
 
@@ -74,7 +74,7 @@ class Handler extends CoreHandler
      */
     protected function convertExceptionToResponse(Exception $e): Response
     {
-        if (! $request->ajax() && ! $request->wantsJson()) {
+        if (! request()->ajax() && ! request()->wantsJson()) {
             return parent::convertExceptionToResponse($e);
         }
 
