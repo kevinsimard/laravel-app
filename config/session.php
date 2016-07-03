@@ -33,7 +33,7 @@ return [
     'path' => '/',
 
     // session cookie domain
-    'domain' => null,
+    'domain' => env('SESSION_DOMAIN', null),
 
     // HTTP only cookies
     'secure' => false,

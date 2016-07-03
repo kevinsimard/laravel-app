@@ -10,6 +10,7 @@ return [
     ],
 
     // authentication guards
+    // supported: "session", "token"
     'guards' => [
         'web' => [
             'driver' => 'session',
