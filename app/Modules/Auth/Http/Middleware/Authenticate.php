@@ -20,7 +20,7 @@ class Authenticate
             if ($request->ajax() || $request->wantsJson()) {
                 abort(401);
             } else {
-                return redirect()->guest('login');
+                return redirect()->guest("login");
             }
         }
 

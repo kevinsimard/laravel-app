@@ -16,7 +16,7 @@ class AuthController extends BaseController
     /**
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = "/";
 
     /**
      * @var \App\Modules\Auth\Entities\User
@@ -32,7 +32,7 @@ class AuthController extends BaseController
         $this->users = $users;
 
         $this->middleware($this->guestMiddleware(), [
-            'except' => 'logout',
+            "except" => "logout",
         ]);
     }
 
@@ -43,9 +43,9 @@ class AuthController extends BaseController
     protected function create(array $data): User
     {
         return $this->users->create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => $data['password'],
+            "name" => $data["name"],
+            "email" => $data["email"],
+            "password" => $data["password"],
         ]);
     }
 

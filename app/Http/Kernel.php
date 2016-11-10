@@ -17,7 +17,7 @@ class Kernel extends CoreKernel
      * @var array
      */
     protected $middlewareGroups = [
-        'web' => [
+        "web" => [
             \App\Http\Middleware\EncryptCookies::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
@@ -25,8 +25,8 @@ class Kernel extends CoreKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         ],
 
-        'api' => [
-            'throttle:60,1',
+        "api" => [
+            "throttle:60,1",
             \App\Http\Middleware\AssertJsonRequest::class,
             \App\Http\Middleware\AssertNonEmptyResponse::class,
         ],
@@ -36,9 +36,9 @@ class Kernel extends CoreKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Modules\Auth\Http\Middleware\Authenticate::class,
-        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
-        'guest' => \App\Modules\Auth\Http\Middleware\RedirectIfAuthenticated::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        "auth" => \App\Modules\Auth\Http\Middleware\Authenticate::class,
+        "can" => \Illuminate\Foundation\Http\Middleware\Authorize::class,
+        "guest" => \App\Modules\Auth\Http\Middleware\RedirectIfAuthenticated::class,
+        "throttle" => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
